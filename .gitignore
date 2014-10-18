@@ -107,3 +107,21 @@ sympy-plots-for-*.tex/
 
 # xindy
 *.xdy
+
+# text files
+*.txt
+
+# we use only EPS and PNG formats
+*.jpg
+
+# removing original eps files:
+*.eps.eps
+
+# убираем этюды
+fr.tex
+fr2.*
+eso*.*
+charte.*
+Fonts/*.pdf
+*.zip
+nouv*.*
