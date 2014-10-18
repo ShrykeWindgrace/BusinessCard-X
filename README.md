@@ -11,4 +11,6 @@ If you don't want to use the logo of the lab, simply comment the corresponding l
 If want to use another logo:
   put your logo in a format understandable by XeLaTeX in the same folder as *.tex file. PNG, JPG, EPS work well. Say, it has the name "LogoOfYourLab.eps". In the file "CarteFinale.tex" replace the mention of 'LogoCMLSTZ.png' by 'LogoOfYourLab.eps' (without quotes). Adjust the positioning of you image accordingly (see the notes inside the TeX file and the documentation for 'textpos' package).
 
+If you don't want anything on the backside of your card, simply comment out everything starting (and including) from '\null' command up to (not including) '\end{document}' command.
+
 Afterwards, compile with XeLaTeX. Enjoy.
