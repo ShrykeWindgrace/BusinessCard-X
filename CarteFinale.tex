@@ -25,9 +25,9 @@ verbose,overlay]{textpos}
 \includegraphics[height=20.6mm]{LogohorEPS.eps}%
 \end{textblock*}%[0,0] means that we are positioning the upper left corner of the block. (x,y) are the coordinates
  %
-\begin{textblock*}{20mm}[1,0](80.2mm,4.2mm)%
+\begin{textblock*}{20mm}[1,0](80.2mm,4.2mm)% comment this whole block if you don't want to use the second logo
 \noindent%
-\includegraphics[height=20mm]{LogoCMLSTZ.png}%
+\includegraphics[height=20mm]{LogoCMLSTZ.png}% replace LogoCMLSTZ.png by the name of your file if you intend to use your own logo.
 \end{textblock*}% [1,0] - upper right corner
 %ø
 \setmainfont{EB Garamond}%
@@ -43,5 +43,5 @@ Doctorant%
 F - 91128 Palaiseau CEDEX\\*%
 \phonei\\%   
 E. \emailii}\end{textblock*}% [0,1] -- lower left corner
-%\input{millimetergrid.tex}%
+%\input{millimetergrid.tex}% uncomments this line to see millimeter grid for better positioning
 \end{document} 
