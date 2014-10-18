@@ -1,0 +1,53 @@
+\documentclass{article}
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{paperwidth=85mm, paperheight=55mm, layoutwidth=85mm, layoutheight=55mm, left=0mm, top=0mm, right=0mm, bottom=0mm}
+\usepackage{color}
+\definecolor{bl}{RGB}{0,62,92}
+\usepackage[absolute,
+%showboxes,
+verbose,overlay]{textpos}
+
+% \usepackage[
+%   grid,
+%   gridcolor=red,
+%   subgridcolor=green
+% ]{eso-pic}
+\usepackage{tikz}
+\setmainfont[Numbers={OldStyle,Monospaced}]{EB Garamond}
+
+
+\pagestyle{empty}
+
+ 
+\newcommand{\phonei}{T. +33~(0)1~69~33~49~30 - M.  +33~(0)6~50~83~65~50}%+33169334930 
+
+\newcommand{\emailii}{timofey.zakrevskiy@polytechnique.edu}
+\newcommand{\urli}{www.centremaths.polytechnique.fr}
+\begin{document}%
+\begin{textblock*}{50mm}[0,0](4.2mm,4.2mm)%
+\noindent%
+\includegraphics[height=20.6mm]{LogohorEPS.eps}%
+\end{textblock*}%
+ %
+\begin{textblock*}{20mm}[1,0](80.2mm,4.2mm)%
+\noindent%
+\includegraphics[height=20mm]{LogoCMLSTZ.png}%
+\end{textblock*}% 
+%ø
+\setmainfont{EB Garamond}%
+\fontsize{12}{14.4}\selectfont%
+\begin{textblock*}{65mm}[0,0](18.5mm,24.8mm){\color{bl}\noindent Timofey Zakrevskiy\\*%
+\setmainfont{EB Garamond}%
+\fontsize{7}{7.5}\selectfont%
+Doctorant%
+}\end{textblock*} %
+\setmainfont{TeX Gyre Adventor}%
+ \fontsize{5.5}{7.5}\selectfont%
+\begin{textblock*}{65mm}[0,1](18.5mm,50.8mm){\color{bl}\noindent CENTRE DE MATHEMATIQUES LAURENT SCHWARTZ\\*%
+F - 91128 Palaiseau CEDEX\\*%
+\phonei\\%   
+E. \emailii}\end{textblock*}%
+%\input{millimetergrid.tex}%
+\end{document} 
