@@ -8,12 +8,6 @@
 \usepackage[absolute,
 %showboxes,
 verbose,overlay]{textpos}
-
-% \usepackage[
-%   grid,
-%   gridcolor=red,
-%   subgridcolor=green
-% ]{eso-pic}
 \usepackage{tikz}
 \setmainfont[Numbers={OldStyle,Monospaced}]{EB Garamond}
 
@@ -29,17 +23,17 @@ verbose,overlay]{textpos}
 \begin{textblock*}{50mm}[0,0](4.2mm,4.2mm)%
 \noindent%
 \includegraphics[height=20.6mm]{LogohorEPS.eps}%
-\end{textblock*}%
+\end{textblock*}%[0,0] means that we are positioning the upper left corner of the block. (x,y) are the coordinates
  %
 \begin{textblock*}{20mm}[1,0](80.2mm,4.2mm)%
 \noindent%
 \includegraphics[height=20mm]{LogoCMLSTZ.png}%
-\end{textblock*}% 
+\end{textblock*}% [1,0] - upper right corner
 %ø
 \setmainfont{EB Garamond}%
-\fontsize{12}{14.4}\selectfont%
+\fontsize{12}{14.4}\selectfont% \fontsize{x}{y} : x Fontsize, y - interline interval
 \begin{textblock*}{65mm}[0,0](18.5mm,24.8mm){\color{bl}\noindent Timofey Zakrevskiy\\*%
-\setmainfont{EB Garamond}%
+\setmainfont{EB Garamond}%selecting font. Put whatever you want here. This font resembles the official recomendation.
 \fontsize{7}{7.5}\selectfont%
 Doctorant%
 }\end{textblock*} %
@@ -48,6 +42,6 @@ Doctorant%
 \begin{textblock*}{65mm}[0,1](18.5mm,50.8mm){\color{bl}\noindent CENTRE DE MATHEMATIQUES LAURENT SCHWARTZ\\*%
 F - 91128 Palaiseau CEDEX\\*%
 \phonei\\%   
-E. \emailii}\end{textblock*}%
+E. \emailii}\end{textblock*}% [0,1] -- lower left corner
 %\input{millimetergrid.tex}%
 \end{document} 
