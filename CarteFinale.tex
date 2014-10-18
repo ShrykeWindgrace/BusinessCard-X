@@ -1,19 +1,21 @@
 \documentclass{article}
-\usepackage{fontspec}
-\usepackage{graphicx}
-\usepackage{geometry}
+
+\usepackage{fontspec}%unicode font support
+
+\usepackage{graphicx}%for pictures
+
+\usepackage{geometry}%define the size of the page
 \geometry{paperwidth=85mm, paperheight=55mm, layoutwidth=85mm, layoutheight=55mm, left=0mm, top=0mm, right=0mm, bottom=0mm}
-\usepackage{xcolor}
+
+\usepackage{xcolor}%setup colors
 \definecolor{bl}{RGB}{0,62,92}
-\usepackage[absolute,
-%showboxes,
-verbose,overlay]{textpos}
-\usepackage{tikz}
+
+\usepackage[absolute,%showboxes %uncomment showboxes to see the boxes of text
+verbose,overlay]{textpos}%the package for precise positioning of the text
+\usepackage{tikz}%if we want to use millimeter grid
 \setmainfont[Numbers={OldStyle,Monospaced}]{EB Garamond}
 
-
-\pagestyle{empty}
-
+\pagestyle{empty}%remove all inherited formatting for the page
  
 \newcommand{\phonei}{T. +33~(0)1~69~33~49~30 - M.  +33~(0)6~50~83~65~50}%+33169334930 
 
@@ -43,10 +45,13 @@ Doctorant%
 F - 91128 Palaiseau CEDEX\\*%
 \phonei\\%   
 E. \emailii}\end{textblock*}% [0,1] -- lower left corner
-%\input{millimetergrid.tex}% uncomments this line to see millimeter grid for better positioning
-%\cleardoublepage
-% \pagebreak
-% \pagebreak
+%\input{millimetergrid.tex}% uncomments this line to see millimeter grid for better positioning%
 \null\newpage%requires \null, because the engine thinks that the page is empty and ignores all pagebreaks/newpages/clearpages/cleardoublepages
-some text
+% some text
+\begin{textblock*}{560mm}[0.14,0.12](-46.2mm,18.5mm)%the choice of these numbers is some woodoo, no idea how to automate them for arbitrary pictures
+\noindent%
+\includegraphics[height=425mm]%same here
+{LogohorEPS.eps}%
+\end{textblock*}%
+% \input{millimetergrid.tex}% uncomment this line to see millimeter grid for better positioning
 \end{document} 
