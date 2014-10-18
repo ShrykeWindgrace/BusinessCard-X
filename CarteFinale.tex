@@ -3,7 +3,7 @@
 \usepackage{graphicx}
 \usepackage{geometry}
 \geometry{paperwidth=85mm, paperheight=55mm, layoutwidth=85mm, layoutheight=55mm, left=0mm, top=0mm, right=0mm, bottom=0mm}
-\usepackage{color}
+\usepackage{xcolor}
 \definecolor{bl}{RGB}{0,62,92}
 \usepackage[absolute,
 %showboxes,
@@ -44,4 +44,9 @@ F - 91128 Palaiseau CEDEX\\*%
 \phonei\\%   
 E. \emailii}\end{textblock*}% [0,1] -- lower left corner
 %\input{millimetergrid.tex}% uncomments this line to see millimeter grid for better positioning
+%\cleardoublepage
+% \pagebreak
+% \pagebreak
+\null\newpage%requires \null, because the engine thinks that the page is empty and ignores all pagebreaks/newpages/clearpages/cleardoublepages
+some text
 \end{document} 
