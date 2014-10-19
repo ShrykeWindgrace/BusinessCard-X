@@ -125,3 +125,6 @@ charte.*
 Fonts/*.pdf
 *.zip
 nouv*.*
+
+# removing files for habrahabr:
+habr*.*
