@@ -127,4 +127,4 @@ Fonts/*.pdf
 nouv*.*
 
 # removing files for habrahabr:
-habr*.*
+Habr/*.*
